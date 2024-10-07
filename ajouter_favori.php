@@ -46,4 +46,8 @@ if (isset($_SESSION['user_id'])) {
 // Fermer la connexion
 $stmt_check->close();
 $conn->close();
+
+// Redirection vers plant_page.php
+header("Location: plant_page.php");
+exit();
 ?>
